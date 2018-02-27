@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+$gray: #666;
+$darkGrey: #1B1818;
+$white: #fff;
+$snow: #ddd;
+
+html, body {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  background: $white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1600px;
+}
+
+.button {
+  background: $darkGrey;
+  text-transform: uppercase;
+  outline: none;
+  color: $white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 1px solid $darkGrey;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+  line-height: 30px;
+  font-weight: normal;
+  font-family: Raleway, sans-serif;
+  transition: 0.62s ease all;
+
+
+
+  &:focus{
+    border: 1px solid #444;
+    background: #444;
+  }
+
+  &[disabled="true"]{
+    cursor: default;
+    color: $snow;
+    background: $gray;
+    border: 1px solid $gray;
+  }
+
+  &:hover:not([disabled="true"]) {
+    background: $white;
+    color: $darkGrey;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+
+  &:active {
+    color: green !important;
+    border:1px solid green !important;
+    background: #B4FFB4 !important;
+  }
+
+}
+
+.form-group {
+  margin: 15px;
+}
+
+.form-control {
+
+  font-size: 1em;
+  font-weight: 600;
+  font-style: italic;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 2px solid;
+  background: rgba(255, 255, 255, 0.39);
+  resize: none;
+
+  &[type="text"] {
+    border: none;
+    background: none;
+    border-bottom: 2px solid #2c2c2c;
+  }
+}
+
+.text-italic {
+  font-style: italic;
+  color: $white;
+}
+
+.text-danger {
+  font-style: italic;
+  color: red;
+}
+
+.text-success {
+  font-style: italic;
+  color: green;
+}
+
+.section-header {
+  color: $darkGrey;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.section-header--white {
+  color: $white;
+
+  .section-header__text-small::after {
+    background: $white;
+  }
+}
+.section-header__text-small {
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: $darkGrey;
+    bottom: -4.75rem;
+    left: 0;
+  }
+}
+
+.section-header__text-big {
+  display: block;
+  line-height: 4rem;
+  font-size: 3.75rem;
+  margin: 0 0 50px;
+
+}
