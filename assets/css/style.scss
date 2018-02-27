@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import "fonts";
 
 $gray: #666;
 $darkGrey: #1B1818;
 $white: #fff;
 $snow: #ddd;
+$greyligt: #2C2C2C;
+$red: #b70000;
 
 html, body {
   font-family: Raleway, sans-serif;
@@ -12,7 +14,7 @@ html, body {
   line-height: 30px;
   margin: 0;
   padding: 0;
-  background: $white;
+  background: #333333;
 }
 
 .container {
@@ -135,11 +137,137 @@ html, body {
     left: 0;
   }
 }
-
 .section-header__text-big {
   display: block;
   line-height: 4rem;
   font-size: 3.75rem;
   margin: 0 0 50px;
 
+}
+
+.header {
+  background: black;
+  padding: 20px 0;
+}
+.header__columns {
+  display: flex;
+}
+.header__column--left {
+  width: 35%;
+  font-family: 'Righteous', cursive;
+  color: $white;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+.header__logo {
+  display: inline-block;
+  padding-top: 6px;
+  transition: 0.4s ease all;
+  outline: none;
+  &:hover {
+    color: $red;
+  }
+  &:focus {
+    color: $red;
+  }
+  &:active {
+    color: #FA4343;
+  }
+}
+
+.header__column--center {
+  width: 30%;
+}
+.header__column--right {
+  width: 35%;
+
+}
+
+.main-menu {
+  text-align: center;
+  margin-top: 10px;
+}
+.main-menu__list {
+  padding: 0;
+  margin: 0;
+}
+.main-menu__list-item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  &.active {
+    color: $red;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.main-menu__list-item-link {
+  text-decoration: none;
+  color: $white;
+  transition: 0.4s ease all;
+  outline: none;
+  &:hover {
+  color: $red;
+  }
+  &:focus {
+    color: $red;
+  }
+  &:active {
+    color: #FA4343;
+  }
+}
+
+.header-contact {
+  padding-top: 8px;
+  text-align: right;
+}
+.header-contact__list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.header-contact__list-item {
+  display: inline-block;
+  vertical-align: middle;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.header-contact__list-item-link {
+  color: $white;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.4s ease all;
+  outline: none;
+  &:hover {
+    opacity: 1;
+  }
+
+  img {
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+  }
+
+  &:active {
+  opacity: 0.8;
+  }
+  &:focus {
+  opacity: 1;
+  }
+
+}
+
+.header-contact__list-item-phone {
+  vertical-align: top;
+  margin-left: 5px;
 }

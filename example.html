@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        .inline-sibling {
+            display: inline-block;
+            width: calc(100% / 3);
+        }
+
+        .float-sibling {
+            float: left;
+            width: calc(100% / 3);
+        }
+
+        .float-sibling--no-float {
+            width: calc(100% / 3);
+            margin-left: calc(100% / 3 * 2);
+        }
+
+        .flex-parent {
+            display: flex;
+        }
+    </style>
+    <p>Через таблицы</p>
+    <table>
+        <tbody>
+            <tr>
+                <td>Левая</td>
+                <td>Центральная</td>
+                <td>Правая</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Через inline-block</p>
+    <div class="inline-parent">
+        <div class="inline-sibling">левая</div>
+        <div class="inline-sibling">центральная</div>
+        <div class="inline-sibling">правая</div>
+    </div>
+    <p>Через float</p>
+    <div class="float-parent">
+        <div class="float-sibling" style="background: #555">левая</div>
+        <div class="float-sibling" style="background: #222">центральная</div>
+        <div class="float-sibling--no-float" style="background: #aaa">правая</div>
+    </div>
+    <p>Через flex</p>
+    <div class="flex-parent">
+        <div class="flex-sibling" style="background: #555; width: 20%">левая</div>
+        <div class="flex-sibling" style="background: #222; width: 40%">центральная</div>
+        <div class="flex-sibling" style="background: #aaa; width: 40%">правая</div>
+    </div>
+</body>
+</html>
