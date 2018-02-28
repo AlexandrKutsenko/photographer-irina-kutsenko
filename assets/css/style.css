@@ -363,4 +363,58 @@ html, body {
   margin: 0;
   padding: 10px 0 0; }
 
+.categories__text {
+  max-width: 630px;
+  margin: 0 auto 25px;
+  font-style: italic;
+  line-height: 1.5rem; }
+
+.categories-list {
+  display: flex; }
+
+.categories-list__item {
+  position: relative;
+  width: calc((100% - 45px) / 4);
+  margin-right: 15px; }
+  .categories-list__item:last-child {
+    margin-right: 0; }
+  .categories-list__item:hover .categories-list__item-button-container {
+    background: rgba(0, 0, 0, 0.1); }
+
+.categories-list__item-img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.categories-list__item-button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease all;
+  text-align: center; }
+  .categories-list__item-button-container::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle; }
+
+.categories-list__item-link {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 17px;
+  border: 1px solid #fff;
+  background: rgba(27, 24, 24, 0.4);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: 0.4s ease background; }
+  .categories-list__item-link:hover {
+    background: #1b1818; }
+
 /*# sourceMappingURL=style.css.map */
