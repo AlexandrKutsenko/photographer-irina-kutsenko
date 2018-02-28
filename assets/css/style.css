@@ -123,7 +123,11 @@ html, body {
 
 .header {
   background: #1B1818;
-  padding: 20px 0; }
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30; }
 
 .header__columns {
   display: flex; }
@@ -229,6 +233,7 @@ html, body {
   background-size: cover;
   height: calc(100vh - 78px);
   padding-top: 240px;
+  margin-top: 87px;
   position: relative;
   box-sizing: border-box; }
   .home-first-screen::after {
