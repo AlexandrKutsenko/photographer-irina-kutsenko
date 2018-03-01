@@ -487,3 +487,17 @@ html, body {
     background: rgba($darkGrey, 1);
   }
 }
+
+.instagram {
+  background: $darkGrey;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  color: $white;
+}
+.instagram__button-link {
+  background: $white;
+  color: $darkGrey;
+  margin: 25px auto;
+  display: block;
+  word-spacing: 3px;
+}

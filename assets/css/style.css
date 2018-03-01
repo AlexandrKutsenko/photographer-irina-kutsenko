@@ -417,4 +417,17 @@ html, body {
   .categories-list__item-link:hover {
     background: #1b1818; }
 
+.instagram {
+  background: #1B1818;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  color: #fff; }
+
+.instagram__button-link {
+  background: #fff;
+  color: #1B1818;
+  margin: 25px auto;
+  display: block;
+  word-spacing: 3px; }
+
 /*# sourceMappingURL=style.css.map */
