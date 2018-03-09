@@ -4,6 +4,7 @@ $gray: #666;
 $darkGrey: #1B1818;
 $white: #fff;
 $snow: #ddd;
+$grey: #d5d5d5;
 $greyligt: #2C2C2C;
 $red: #b70000;
 
@@ -20,6 +21,10 @@ html, body {
 .container {
   margin: 0 auto;
   width: 1600px;
+}
+.container-fluid {
+  width: calc(100% - 30px);
+  padding: 0 15px;
 }
 
 .button {
@@ -66,6 +71,12 @@ html, body {
     background: #B4FFB4 !important;
   }
 
+}
+.button--small {
+  line-height: 24px;
+  padding: 8px 22px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .form-group {
@@ -491,7 +502,6 @@ html, body {
 .instagram {
   background: $darkGrey;
   padding: 20px 0;
-  margin-bottom: 20px;
   color: $white;
 }
 .instagram__button-link {
@@ -500,4 +510,119 @@ html, body {
   margin: 25px auto;
   display: block;
   word-spacing: 3px;
+}
+
+.prices {
+  background: $snow;
+  padding: 10px 0 30px;
+}
+
+.price-list {
+  display: flex;
+}
+.price-list-item {
+  width: calc((100% - 90px) / 4);
+  position: relative;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.price-list-item__header {
+  position: relative;
+  padding: 15px 0 20px;
+  overflow: hidden;
+
+  &:before, &:after {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    z-index: 20;
+    background: $white;
+  }
+
+  &:before {
+    transform: skewX(45deg);
+    left: -5px;
+  }
+
+  &:after {
+    transform: skewX(135deg);
+    right: -5px;
+  }
+}
+.price-list-item__header-content {
+  position: relative;
+  z-index: 20;
+  color: $white;
+}
+.price-list-item__image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.price-list-item__name {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  margin: 0;
+
+  &:after, &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 4px;
+    background: $white;
+    margin: 0 10px;
+  }
+}
+.price-list-item__price {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  margin: 10px 0 5px;
+  line-height: 2.5rem;
+
+  &:after {
+    content: '$';
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+}
+.price-list-item__comment {
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.price-list-item__content {
+  background: #fff;
+  padding-bottom: 30px;
+}
+.price-list-item__characteristics-list {
+  margin: 0;
+  padding: 12px 0 40px;
+}
+.price-list-item__characteristic {
+  display: block;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  position: relative;
+
+  &:not(:last-child):after {
+    content: '';
+    display: block;
+    width: 95px;
+    height: 1px;
+    background: $grey;
+    margin: 0 auto;
+    position: relative;
+    bottom: -10px;
+  }
 }
