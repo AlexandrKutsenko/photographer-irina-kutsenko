@@ -75,7 +75,8 @@ html, body {
 .button--small {
   line-height: 24px;
   padding: 8px 22px;
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
+  letter-spacing: normal !important;
   font-weight: 600;
 }
 
@@ -625,4 +626,13 @@ html, body {
     position: relative;
     bottom: -10px;
   }
+}
+
+.footer {
+  background: $darkGrey;
+  color: $white;
+  text-align: center;
+  padding: 28px 0 25px;
+  font-weight: 300;
+  font-size: 0.6rem;
 }
