@@ -28,12 +28,14 @@
                 <div class="header__column header__column--center">
                     <nav class="main-menu">
                         <ul class="main-menu__list">
-                            <li class="main-menu__list-item active">Home</li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__list-item-link" href="index.html">Home</a>
+                            </li>
                             <li class="main-menu__list-item">
                                 <a class="main-menu__list-item-link" href="#">Gallery</a>
                             </li>
                             <li class="main-menu__list-item">
-                                <a class="main-menu__list-item-link" href="#">Contact</a>
+                                <a class="main-menu__list-item-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -77,7 +79,8 @@
                 </div>
             </div>
         </div>
-    </header><!-- END HEADER -->
+    </header>
+    <!-- END HEADER -->
     <!-- BEGIN FIRST SCREEN BANNER -->
     <section class="home-first-screen">
         <div class="container home-first-screen__content">
@@ -441,7 +444,7 @@
         </div>
     </footer>
     <!-- END FOOTER -->
-
+    <!--masonry-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
@@ -450,16 +453,16 @@
         var $grid = $('.portfolio-images').masonry({
             // options...
         });
-
     </script>
-                                <!--owlcarousel-->
-                    <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
-                    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
-                    <script>
-                        $(document).ready(function(){
-                        $(".owl-carousel").owlCarousel();
-                        });
-                    </script>
+    <!--masonry end-->
+    <!--owlcarousel-->
+    <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
@@ -472,6 +475,6 @@
             autoplayHoverPause:true
         });
     </script>
-
+    <!--owlcarousel end-->
 </body>
 </html>

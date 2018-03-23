@@ -163,6 +163,42 @@ html, body {
   font-size: 3rem;
 }
 
+
+
+
+.contact {
+  display: flex;
+  color: $white;
+  padding: 87px 0 0 0;
+  margin: 0;
+}
+.contact-content {
+  max-width: 50%;
+  float: left;
+  background: url("http://promo-theme.com/persona-wp/wp-content/uploads/2016/12/contact-bg.jpg") no-repeat center;
+}
+.contact-content__text {
+  padding: 50px;
+}
+.contact-form {
+  display: inline-block;
+  max-width: 400px;
+  color: $darkGrey;
+  margin: 50px;
+}
+.form {
+  padding: 0;
+  margin: 0;
+  font-family: Raleway;
+  font-size: 16px;
+
+}
+
+
+
+
+
+
 .header {
   background: $darkGrey;
   padding: 20px 0;
