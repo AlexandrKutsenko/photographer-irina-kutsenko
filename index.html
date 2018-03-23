@@ -258,13 +258,22 @@
                 <span class="section-header__text-big">testimotionals</span>
             </h2>
         </div>
-        <div class="testimotionals-slider owl-carousel">
+        <div class="testimotionals-slider owl-carousel owl-theme owl-loaded">
                     <div class="testimotionals-item">
                         <div class="testimotionals-item__avatar">
                             <img src="http://promo-theme.com/persona-wp/wp-content/uploads/2016/12/avatar.jpg" alt="Emma Levise">
                         </div>
                         <blockquote class="testimotionals-item__blockquote">
-                            Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in.
+                            Mauris suscipit feugiat ante quis pellentesque. Interdum et ms in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in.
+                            <span class="testimotionals-item__blockquote-post">Emma Levise</span>
+                        </blockquote>
+                    </div>
+                    <div class="testimotionals-item">
+                        <div class="testimotionals-item__avatar">
+                            <img src="http://promo-theme.com/persona-wp/wp-content/uploads/2016/12/avatar.jpg" alt="Emma Levise">
+                        </div>
+                        <blockquote class="testimotionals-item__blockquote">
+                            Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac anMauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in.
                             <span class="testimotionals-item__blockquote-post">Emma Levise</span>
                         </blockquote>
                     </div>
@@ -291,16 +300,7 @@
                             <img src="http://promo-theme.com/persona-wp/wp-content/uploads/2016/12/avatar.jpg" alt="Emma Levise">
                         </div>
                         <blockquote class="testimotionals-item__blockquote">
-                            Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in.
-                            <span class="testimotionals-item__blockquote-post">Emma Levise</span>
-                        </blockquote>
-                    </div>
-                    <div class="testimotionals-item">
-                        <div class="testimotionals-item__avatar">
-                            <img src="http://promo-theme.com/persona-wp/wp-content/uploads/2016/12/avatar.jpg" alt="Emma Levise">
-                        </div>
-                        <blockquote class="testimotionals-item__blockquote">
-                            Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in.
+                            Mauris suscipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucipit feugiat ante quis pellentesque. Interdum et malesuada famescipit feugiat ante quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in fauc ac ante ipsum primis in fauccibus. Vivamus non pharetra arcu. Quisque vitae molestie ex. In placerat dolor magna, non pretium elit pellentesque id. Maecenas at neque blandit, commodo augue in.
                             <span class="testimotionals-item__blockquote-post">Emma Levise</span>
                         </blockquote>
                     </div>
@@ -455,6 +455,23 @@
                                 <!--owlcarousel-->
                     <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
                     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+                    <script>
+                        $(document).ready(function(){
+                        $(".owl-carousel").owlCarousel();
+                        });
+                    </script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:1,
+            loop:true,
+            margin:10,
+            autoHeight:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true
+        });
+    </script>
 
 </body>
 </html>
