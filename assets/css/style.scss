@@ -331,6 +331,7 @@ html, body {
 
 .portfolio-images__item {
   display: block;
+  overflow: hidden;
   position: relative;
   opacity: 1;
   z-index: 10;
@@ -338,6 +339,14 @@ html, body {
   &:hover .portfolio-images__item-text {
   opacity: 1;
   }
+}
+.portfolio-images__grid-sizer,
+.portfolio-images__item {
+
+  width: calc(100% / 3);
+}
+.portfolio-images__item--width-2 {
+  width: calc(100% / 3 * 2);
 }
 .portfolio-images__item-img {
   display: block;
@@ -500,6 +509,34 @@ html, body {
   }
 }
 
+.owl-carousel{
+  display: block;
+}
+.testimotionals-item {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimotionals-item__blockquote {
+  margin: 20px 0;
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1.667em;
+  position: relative;
+  padding: 65px 0px 25px;
+  font-style: italic;
+  text-align: center;
+}
+.testimotionals-item__blockquote-post {
+  display: block;
+  font-weight: bold;
+  margin-top: 2em;
+  line-height: 0.9em;
+}
+
+
+
+
 .instagram {
   background: $darkGrey;
   padding: 20px 0;
@@ -632,7 +669,7 @@ html, body {
   background: $darkGrey;
   color: $white;
   text-align: center;
-  padding: 28px 0 25px;
+  padding: 20px 0 20px;
   font-weight: 300;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
