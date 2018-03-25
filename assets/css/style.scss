@@ -185,13 +185,25 @@ html, body {
   max-width: 400px;
   color: $darkGrey;
   margin: 50px;
+  border: none;
 }
 .form {
   padding: 0;
   margin: 0;
   font-family: Raleway;
   font-size: 16px;
-
+}
+input[name="name"],
+input[name="email"],
+input[name="phone"],
+input[name="textarea"]{
+  border: none;
+  padding:7px auto;
+  height: 30px;
+  background:$white;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
 }
 
 
