@@ -9,6 +9,7 @@ $greyligt: #2C2C2C;
 $red: #b70000;
 
 html, body {
+  height: 100%;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   color: #333;
@@ -679,18 +680,23 @@ html, body {
   background: $darkGrey;
   color: $white;
   text-align: center;
-  padding: 20px 0 20px;
+  padding: 20px 0;
   font-weight: 300;
   font-size: 0.8rem;
+  height: 60px;
 }
 
 
     //Contact page
+.header__contact {
+  position: static;
+}
+
 .contact {
   display: flex;
   color: $white;
-  padding: 87px 0 0 0;
   margin: 0;
+  height: calc(100% - 187px);
 }
 .contact-container {
   display: flex;

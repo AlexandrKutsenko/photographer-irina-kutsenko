@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 html, body {
+  height: 100%;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   color: #333;
@@ -587,15 +588,19 @@ html, body {
   background: #1B1818;
   color: #fff;
   text-align: center;
-  padding: 20px 0 20px;
+  padding: 20px 0;
   font-weight: 300;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  height: 60px; }
+
+.header__contact {
+  position: static; }
 
 .contact {
   display: flex;
   color: #fff;
-  padding: 87px 0 0 0;
-  margin: 0; }
+  margin: 0;
+  height: calc(100% - 187px); }
 
 .contact-container {
   display: flex;
