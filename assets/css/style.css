@@ -133,44 +133,11 @@ html, body {
 .section-header__text-big--smaller {
   font-size: 3rem; }
 
-.contact {
-  display: flex;
-  color: #fff;
-  padding: 87px 0 0 0;
-  margin: 0; }
+.section-header__text-big--size-2 {
+  font-size: 3rem; }
 
-.contact-content {
-  max-width: 50%;
-  float: left;
-  background: url("http://promo-theme.com/persona-wp/wp-content/uploads/2016/12/contact-bg.jpg") no-repeat center; }
-
-.contact-content__text {
-  padding: 50px; }
-
-.contact-form {
-  display: inline-block;
-  max-width: 400px;
-  color: #1B1818;
-  margin: 50px;
-  border: none; }
-
-.form {
-  padding: 0;
-  margin: 0;
-  font-family: Raleway;
-  font-size: 16px; }
-
-input[name="name"],
-input[name="email"],
-input[name="phone"],
-input[name="textarea"] {
-  border: none;
-  padding: 7px auto;
-  height: 30px;
-  background: #fff;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: 600; }
+.section-header__text-big--smaller-size-2 {
+  font-size: 1.5rem; }
 
 .header {
   background: #1B1818;
@@ -623,5 +590,48 @@ input[name="textarea"] {
   padding: 20px 0 20px;
   font-weight: 300;
   font-size: 0.8rem; }
+
+.contact {
+  display: flex;
+  color: #fff;
+  padding: 87px 0 0 0;
+  margin: 0; }
+
+.contact-container {
+  display: flex;
+  width: 100%; }
+
+.contact-content {
+  background: url("http://promo-theme.com/persona-wp/wp-content/uploads/2016/12/contact-bg.jpg") no-repeat center;
+  background-size: cover; }
+
+.contact-content__text {
+  width: calc(50% - 400px);
+  padding: 100px 200px 0px; }
+
+.contact-form {
+  text-align: center;
+  display: block;
+  width: calc(50% - 400px);
+  color: #1B1818;
+  border: none;
+  padding: 50px 200px 0px; }
+
+.contact-form-title {
+  margin: 0 0 30px;
+  line-height: 3rem; }
+
+.contact-form__data {
+  width: 400px;
+  margin: 50px auto; }
+
+.contact-form__form-control {
+  padding: 5px 10px;
+  background: #fff;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  width: 100%;
+  outline: none; }
 
 /*# sourceMappingURL=style.css.map */
