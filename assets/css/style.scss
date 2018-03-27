@@ -701,7 +701,7 @@ html, body {
   justify-content: center;
   color: $white;
   margin: 0;
-  height: calc(100% - 187px);
+  min-height: 80.3%;
 }
 .contact-container {
   display: flex;
@@ -723,6 +723,7 @@ html, body {
   color: $darkGrey;
   border: none;
   padding: 50px 200px 0px;
+
 }
 .contact-form-title {
   margin: 0 0 30px;
@@ -832,3 +833,25 @@ html, body {
     margin: 40px 0px;
   }
 }
+@media screen and (max-width: 337px) {
+  .contact-content__text > h1 {
+    font-size: 1.7rem;
+  }
+  .contact-content__text > h3 {
+    font-size: 1.3rem;
+  }
+  .contact-content__text > p {
+    font-size: 0.9rem;
+  }
+  .contact-form-title {
+    font-size: 1.7rem;
+  }
+  .form-group {
+    font-size: 0.9rem;
+  }
+  .footer {
+    padding: 0px 5px;
+    height: auto;
+  }
+}
+    //Responsive Home page
