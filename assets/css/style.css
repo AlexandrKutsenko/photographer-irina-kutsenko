@@ -585,6 +585,8 @@ html, body {
     bottom: -10px; }
 
 .footer {
+  display: flex;
+  justify-content: center;
   background: #1B1818;
   color: #fff;
   text-align: center;
@@ -594,10 +596,13 @@ html, body {
   height: 60px; }
 
 .header__contact {
+  display: flex;
+  justify-content: center;
   position: static; }
 
 .contact {
   display: flex;
+  justify-content: center;
   color: #fff;
   margin: 0;
   height: calc(100% - 187px); }
@@ -616,7 +621,8 @@ html, body {
 
 .contact-form {
   text-align: center;
-  display: block;
+  display: flex;
+  justify-content: center;
   width: calc(50% - 400px);
   color: #1B1818;
   border: none;
@@ -638,5 +644,44 @@ html, body {
   font-weight: 600;
   width: 100%;
   outline: none; }
+
+@media screen and (max-width: 1370px) {
+  .header__columns {
+    width: calc(100% - 50px);
+    padding: 0 25px; }
+
+  .contact-content__text {
+    padding: 50px 100px 0px;
+    width: 50%; }
+
+  .contact-form {
+    padding: 25px 75px 0px;
+    width: 50%; } }
+@media screen and (max-width: 1060px) {
+  .contact-content__text {
+    padding: 80px 40px 0px;
+    width: 50%; }
+
+  .contact-content__text > h1 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 2rem; }
+
+  .contact-form-title {
+    font-size: 2rem; }
+
+  .contact-form {
+    width: 50%;
+    padding: 10px 10px 0px; }
+
+  .contact-form__data {
+    width: 300px;
+    margin: 75px 0px; } }
+@media screen and (max-width: 770px) {
+  .contact-content {
+    width: 100%; }
+
+  .contact-form {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
