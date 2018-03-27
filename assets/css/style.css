@@ -646,6 +646,9 @@ html, body {
   outline: none; }
 
 @media screen and (max-width: 1370px) {
+  .header-contact {
+    text-align: center; }
+
   .header__columns {
     width: calc(100% - 50px);
     padding: 0 25px; }
@@ -658,6 +661,14 @@ html, body {
     padding: 25px 75px 0px;
     width: 50%; } }
 @media screen and (max-width: 1060px) {
+  .header__column--left {
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    text-align: center; }
+
+  .main-menu__list-item:not(:last-child) {
+    margin-right: 0.5rem; }
+
   .contact-content__text {
     padding: 80px 40px 0px;
     width: 50%; }
@@ -678,10 +689,40 @@ html, body {
     width: 300px;
     margin: 75px 0px; } }
 @media screen and (max-width: 770px) {
-  .contact-content {
+  .header__columns {
+    display: block; }
+
+  .header__column {
+    margin-bottom: 1rem; }
+
+  .header__column--left {
     width: 100%; }
 
+  .header__column--center {
+    width: 100%; }
+
+  .header__column--right {
+    width: 100%; }
+
+  .contact {
+    height: auto; }
+
+  .contact-container {
+    display: block; }
+
+  .contact-content {
+    width: calc(100% - 100px); }
+
   .contact-form {
-    width: 100%; } }
+    width: 100%;
+    padding: 0px; }
+
+  .contact-content__text {
+    padding: 50px;
+    text-align: center; }
+
+  .contact-form__data {
+    width: 90%;
+    margin: 40px 0px; } }
 
 /*# sourceMappingURL=style.css.map */
