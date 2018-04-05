@@ -645,6 +645,28 @@ html, body {
   width: 100%;
   outline: none; }
 
+.my-gallery {
+  display: flex;
+  width: 100%;
+  float: left; }
+
+.my-gallery img {
+  width: 100%;
+  height: auto; }
+
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px; }
+
+.my-gallery figcaption {
+  display: none; }
+
+.footer-gallery {
+  display: block;
+  clear: both; }
+
 @media screen and (max-width: 1370px) {
   .header-contact {
     text-align: center; }
