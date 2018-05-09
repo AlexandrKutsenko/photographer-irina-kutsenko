@@ -843,7 +843,8 @@ display: block;
     height: auto;
   }
   .contact-container {
-    display: block;
+    flex-direction: column;
+    height: auto;
   }
   .contact-content {
     width: calc(100% - 100px);
