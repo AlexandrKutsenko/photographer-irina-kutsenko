@@ -341,14 +341,49 @@ html, body {
   padding-top: 5px;
 }
 
-
-
-.portfolio-images__img {
+.portfolio-images {
   display: flex;
-  width: 33.333%;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.portfolio-images--link {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 50em) {
+  .portfolio-images--link {
+    width: calc(25% - 6px);
+  }
+}
+
+.portfolio-images--link:hover img {
+  transform: scale(1.2);
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.portfolio-images--img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+
+
+
+
+
 
 
 .about {
