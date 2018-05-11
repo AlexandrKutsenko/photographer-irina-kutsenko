@@ -344,9 +344,9 @@ html, body {
 .portfolio-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
 }
-
 .portfolio-images--link {
   display: inline-block;
   margin-bottom: 8px;
@@ -354,13 +354,6 @@ html, body {
   text-decoration: none;
   color: black;
 }
-
-@media screen and (min-width: 50em) {
-  .portfolio-images--link {
-    width: calc(25% - 6px);
-  }
-}
-
 .portfolio-images--link:hover img {
   transform: scale(1.2);
 }
@@ -378,13 +371,6 @@ figure {
   background: #ccc;
   transition: transform .2s ease-in-out;
 }
-
-
-
-
-
-
-
 
 .about {
   display: flex;
@@ -806,6 +792,11 @@ figure {
   .contact-form__data {
     width: 300px;
     margin: 75px 0px;
+  }
+}
+@media screen and (min-width: 1060px) {
+  .portfolio-images--link {
+    width: calc(25% - 6px);
   }
 }
 @media screen and (max-width: 770px) {
