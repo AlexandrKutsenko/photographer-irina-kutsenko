@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -45,32 +45,32 @@
                         <ul class="header-contact__list">
                             <li class="header-contact__list-item">
                                 <a href="https://www.instagram.com/irina_kutsenko_ph/" class="header-contact__list-item-link" target="_blank">
-                                    <img src="/img/icon/instagram_icon.png" alt="starofservice">
+                                    <img src="img/icon/instagram_icon.png" alt="starofservice">
                                 </a>
                             </li>
                             <li class="header-contact__list-item">
                                 <a href="https://www.starofservice.co/#/" class="header-contact__list-item-link" target="_blank">
-                                    <img src="/img/icon/starofservice_icon.png" alt="starofservice">
+                                    <img src="img/icon/starofservice_icon.png" alt="starofservice">
                                 </a>
                             </li>
                             <li class="header-contact__list-item">
                                 <a href="https://www.facebook.com/IrinaKutsenkoPH"  class="header-contact__list-item-link" target="_blank">
-                                    <img src="/img/icon/fb_icon.png" alt="starofservice">
+                                    <img src="img/icon/fb_icon.png" alt="starofservice">
                                 </a>
                             </li>
                             <li class="header-contact__list-item">
                                 <a href="https://vk.com/irina_kutsenko_ph" class="header-contact__list-item-link" target="_blank">
-                                    <img src="/img/icon/vk_icon.png" alt="starofservice">
+                                    <img src="img/icon/vk_icon.png" alt="starofservice">
                                 </a>
                             </li>
                             <li class="header-contact__list-item">
                                 <a href="mailto:irinakutsenkoph@gmail.com" class="header-contact__list-item-link" target="_blank">
-                                    <img src="/img/icon/mail_icon.png" alt="starofservice">
+                                    <img src="img/icon/mail_icon.png" alt="starofservice">
                                 </a>
                             </li>
                             <li class="header-contact__list-item">
                                 <a href="tel:34603342248" title="+34 603 34 22 48" class="header-contact__list-item-link" target="_blank">
-                                    <img src="/img/icon/phone_icon.png" alt="starofservice">
+                                    <img src="img/icon/phone_icon.png" alt="starofservice">
                                     <span class="header-contact__list-item-phone">+34 603 34 22 48</span>
                                 </a>
                             </li>
@@ -157,14 +157,14 @@
     <!-- BEGIN SECTION ABOUT ME -->
     <section class="about">
             <div class="about__column-left">
-                <img class="about__img" src="/img/aboutme.jpg" alt="About me">
+                <img class="about__img" src="img/aboutme.jpg" alt="About me">
             </div>
             <div class="about__column-right">
                 <h2 class="section-header">
                     <span class="section-header__text-small">Few words</span>
                     <span class="section-header__text-big section-header__text-big--smaller">About me</span>
                 </h2>
-                <p class="text-italic text-italic--dark text-center">My name is Angelina Parker, and I’m a professional photographer. Suspendisse potenti. Pellentesque cursus pulvinar pellentesque. Aenean euismod non lorem at vehicula. Mauris risus massa, hendrerit in blandit eu, placerat nec nulla.</p>
+                <p class="text-italic text-italic--dark text-center">My name is Irina Kutsenko, and I’m a professional photographer. Suspendisse potenti. Pellentesque cursus pulvinar pellentesque. Aenean euismod non lorem at vehicula. Mauris risus massa, hendrerit in blandit eu, placerat nec nulla.</p>
                 <h3 class="section-header">My work principles</h3>
                 <div class="principles">
                     <div class="principles__item">
@@ -399,30 +399,24 @@
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script>
-        var $grid = $('.portfolio-images').masonry({
-            // options...
-        });
-    </script>
     <!--masonry end-->
     <!--owlcarousel-->
-    <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".owl-carousel").owlCarousel();
-        });
-    </script>
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items:1,
-            loop:true,
-            margin:10,
-            autoHeight:true,
-            autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                margin:10,
+                autoHeight:true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true
+            });
+
+            $('.portfolio-images').masonry({
+                // options...
+            });
         });
     </script>
     <!--owlcarousel end-->

@@ -18,6 +18,10 @@ html, body {
   padding: 0;
   background: #fff;
 }
+.gallery-body {
+  display: flex;
+  flex-direction: column;
+}
 
 .container {
   margin: 0 auto;
@@ -302,7 +306,7 @@ html, body {
 }
 
 .home-first-screen {
-  background: url("/img/firstscreen.jpg") no-repeat center top;
+  background: url("../../img/firstscreen.jpg") no-repeat center top;
   background-size: cover;
   height: calc(100vh - 78px);
   padding-top: 240px;
@@ -349,7 +353,7 @@ html, body {
 }
 .portfolio-images--link {
   display: inline-block;
-  margin-bottom: 8px;
+  margin: 3px;
   width: calc(50% - 4px);
   text-decoration: none;
   color: black;
@@ -652,8 +656,9 @@ figure {
     //Gallery
 .my-gallery {
   display: flex;
-  width: 100%;
-  float: left;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px auto;
 }
 .my-gallery img {
   width: 100%;
@@ -661,21 +666,20 @@ figure {
 }
 .my-gallery figure {
   display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 300px;
+  width: 25rem;
 }
 .my-gallery figcaption {
   display: none;
 }
 .footer-gallery {
-  display: inline-flex;
-  width: 100%;
+  flex-shrink: 0;
 }
-
-
-
-
+.hidden-images {
+  display: none;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
 
     //Responsive Contact page
 @media screen and (max-width: 1370px) {
@@ -726,6 +730,10 @@ figure {
     width: 300px;
     margin: 75px 0px;
   }
+  .my-gallery figure {
+    display: block;
+    width: 18rem;
+  }
 }
 @media screen and (min-width: 1060px) {
   .portfolio-images--link {
@@ -772,6 +780,12 @@ figure {
     margin: 40px 0px;
   }
 }
+@media screen and (max-width: 665px) {
+  .my-gallery figure {
+    display: block;
+    width: 15rem;
+  }
+}
 @media screen and (max-width: 337px) {
   .contact-content__text > h1 {
     font-size: 1.7rem;
@@ -793,4 +807,3 @@ figure {
     height: auto;
   }
 }
-    //Responsive Home page
