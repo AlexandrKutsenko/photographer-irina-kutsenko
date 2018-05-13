@@ -353,7 +353,7 @@ html, body {
 .portfolio-images--link {
   display: inline-block;
   margin: 3px;
-  width: calc(50% - 4px);
+  width: calc(25% - 6px);
   text-decoration: none;
   color: black;
 }
@@ -721,6 +721,9 @@ figure img:hover {
     padding: 25px 75px 0px;
     width: 50%;
   }
+  .portfolio-images--link {
+    width: calc(33% - 4px);
+  }
 }
 @media screen and (max-width: 1060px) {
   .header__column--left {
@@ -771,11 +774,6 @@ figure img:hover {
     margin-top: 125px;
   }
 }
-@media screen and (min-width: 1060px) {
-  .portfolio-images--link {
-    width: calc(25% - 6px);
-  }
-}
 @media screen and (max-width: 770px) {
   .header {
     padding: 5px 0;
@@ -794,6 +792,13 @@ figure img:hover {
   }
   .header__column--right {
     width: 100%;
+  }
+
+  .section-header__text-small {
+    font-size: 0.8rem;
+  }
+  .section-header__text-big {
+    font-size: 2rem;
   }
 
   .contact {
@@ -818,6 +823,9 @@ figure img:hover {
     width: 90%;
     margin: 40px 0px;
   }
+  .portfolio-images--link {
+    width: calc(49% - 4px);
+  }
 }
 @media screen and (max-width: 665px) {
   .my-gallery figure {
@@ -832,6 +840,11 @@ figure img:hover {
   }
   .home-first-screen__button-container {
     margin-left: 60px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .portfolio-images--link {
+    width: calc(100% - 4px);
   }
 }
 @media screen and (max-width: 337px) {
@@ -855,3 +868,4 @@ figure img:hover {
     height: auto;
   }
 }
+
