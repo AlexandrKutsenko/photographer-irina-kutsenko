@@ -342,7 +342,6 @@ html, body {
 }
 .home-first-screen__button-container {
   margin-left: 180px;
-  padding-top: 5px;
 }
 
 .portfolio-images {
@@ -477,15 +476,13 @@ figure {
 }
 .price-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .price-list-item {
   width: calc((100% - 90px) / 4);
   position: relative;
   text-align: center;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .price-list-item__header {
   position: relative;
@@ -659,6 +656,7 @@ figure {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 20px auto;
+  align-items: center;
 }
 .my-gallery img {
   width: 100%;
@@ -668,6 +666,7 @@ figure {
   display: block;
   width: 25rem;
 }
+
 .my-gallery figcaption {
   display: none;
 }
@@ -680,8 +679,31 @@ figure {
 .wrapper {
   flex: 1 0 auto;
 }
+figure img:hover {
+  transform: scale(1.2);
+  transition: transform 1s ease-in-out;
+}
 
     //Responsive Contact page
+@media screen and (max-width: 1440px) {
+  .about__column-right {
+    padding: 0px;
+  }
+  .section-header__text-big {
+    line-height: 1.5rem;
+    font-size: 2.5rem;
+    margin: 0px 0 25px;
+  }
+  .section-header__text-big--smaller {
+    font-size: 2rem;
+  }
+  .section-header__text-small::after {
+    bottom: -2.50rem;
+  }
+  .principles__item {
+    padding-bottom: 0px;
+  }
+}
 @media screen and (max-width: 1370px) {
   .header-contact {
     text-align: center;
@@ -705,6 +727,7 @@ figure {
     letter-spacing: 0.1rem;
     line-height: 2rem;
     text-align: center;
+    font-size: 2rem;
   }
   .main-menu__list-item:not(:last-child) {
     margin-right: 0.5rem;
@@ -734,6 +757,19 @@ figure {
     display: block;
     width: 18rem;
   }
+  .home-first-screen__header {
+    font-size: 2.5rem;
+  }
+  .home-first-screen__text {
+    margin: 15px 0;
+  }
+  .home-first-screen__button-container {
+    margin-left: 130px;
+  }
+  .home-first-screen {
+    padding-top: 340px;
+    margin-top: 125px;
+  }
 }
 @media screen and (min-width: 1060px) {
   .portfolio-images--link {
@@ -741,11 +777,14 @@ figure {
   }
 }
 @media screen and (max-width: 770px) {
+  .header {
+    padding: 5px 0;
+  }
   .header__columns {
     display: block;
   }
   .header__column {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   .header__column--left {
     width: 100%;
@@ -784,6 +823,15 @@ figure {
   .my-gallery figure {
     display: block;
     width: 15rem;
+  }
+  .home-first-screen__header {
+    font-size: 2rem;
+  }
+  .home-first-screen__text {
+    margin: 10px 0;
+  }
+  .home-first-screen__button-container {
+    margin-left: 60px;
   }
 }
 @media screen and (max-width: 337px) {
