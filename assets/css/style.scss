@@ -666,7 +666,7 @@ figure {
 }
 .my-gallery figure {
   display: block;
-  width: 25rem;
+  width: 20rem;
 }
 
 .my-gallery figcaption {
@@ -689,7 +689,7 @@ figure img:hover {
     //Responsive Contact page
 @media screen and (max-width: 1440px) {
   .about__column-right {
-    padding: 0px 50px;
+    padding: 0px 20px;
   }
   .section-header__text-big {
     line-height: 1.5rem;
@@ -727,13 +727,25 @@ figure img:hover {
     width: calc(33% - 4px);
   }
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1280px) {
   .about__column-right {
     width: 100%;
   }
   .about__column-left {
     width: 100%;
     margin: 0 auto;
+  }
+  .header {
+    position: static;
+  }
+  .home-first-screen {
+    margin-top: 0;
+    padding-top: 340px;
+  }
+}
+@media screen and (max-width: 1107px) {
+  .my-gallery figure {
+    width: 15rem;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -790,10 +802,6 @@ figure img:hover {
     width: 300px;
     margin: 75px 0px;
   }
-  .my-gallery figure {
-    display: block;
-    width: 18rem;
-  }
   .home-first-screen__header {
     font-size: 2.5rem;
   }
@@ -802,10 +810,6 @@ figure img:hover {
   }
   .home-first-screen__button-container {
     margin-left: 130px;
-  }
-  .home-first-screen {
-    padding-top: 340px;
-    margin-top: 125px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -885,6 +889,9 @@ figure img:hover {
 @media screen and (max-width: 600px) {
   .price-list-item {
     width: calc(100% - 90px);
+  }
+  .my-gallery figure {
+    width: 9rem;
   }
 }
 @media screen and (max-width: 540px) {
