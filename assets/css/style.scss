@@ -681,9 +681,25 @@ figure {
 .wrapper {
   flex: 1 0 auto;
 }
-figure img:hover {
-  transform: scale(1.2);
-  transition: transform 1s ease-in-out;
+.gallery-2 {
+  position: relative;
+}
+.gallery_description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 9px;
+  width: 100%;
+  background-color: rgba(0,0,0,.3);
+  text-align: center;
+  color: white;
+}
+.gallery_description-name {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.gallery_description-text {
+  font-size: 0.8em;
 }
 
     //Responsive Contact page
