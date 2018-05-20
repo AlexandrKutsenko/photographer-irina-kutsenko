@@ -7,7 +7,8 @@
     <!--owlcarousel-->
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
-
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="Magnific-Popup-master/dist/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -418,11 +419,21 @@
                 autoplayHoverPause:true
             });
 
+            $('.portfolio-images').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image'
+                // other options
+            });
+
             $('.portfolio-images').masonry({
+                itemSelector: '.portfolio-images--link'
                 // options...
             });
         });
     </script>
     <!--owlcarousel end-->
+
+    <!-- Magnific Popup core JS file -->
+    <script src="Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 </body>
 </html>
